@@ -67,7 +67,7 @@ open  cdk/bin/cdk.ts
 4. Build the resources:
 
 ```bash
-cd cdk && cdk deploy
+cd cdk && npm install && cdk deploy
 ```
 
 5. Take note of the output values. The output will similar to the output below:
