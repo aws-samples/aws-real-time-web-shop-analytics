@@ -1,4 +1,4 @@
-# Real-Time Web Analytics
+# Real-Time Web Shop Analytics
 
 > *Note: The JWT token for authenticating the requests from your local frontend to Amazon Kinesis expires within 24 hours. As this repository is intended for experimental use only, you may have to re-deploy afterwards.*
 
