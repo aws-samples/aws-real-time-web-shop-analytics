@@ -1,0 +1,2 @@
+boto3==1.26.139
+cfnresponse==1.1.2

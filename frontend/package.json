@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./configureLocalDevEnv.js && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kinesis": "^3.504.0",
+    "@aws-sdk/credential-providers": "^3.504.1",
+    "@cloudscape-design/components": "^3.0.473",
+    "@cloudscape-design/global-styles": "^1.0.20",
+    "@smithy/util-utf8": "^2.1.1",
+    "amazon-cognito-identity-js": "^6.3.7",
+    "aws-sdk": "^2.1545.0",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
+    "normalize.css": "^8.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^10.0.1"
+  }
+}
