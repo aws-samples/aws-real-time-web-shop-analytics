@@ -165,6 +165,6 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 
 ## Authors
 
-- Michelle Pfister
+- [Michelle Pfister](https://github.com/meilipfi)
 - [Felix John](https://github.com/Madabaru)
 
