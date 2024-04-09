@@ -310,19 +310,6 @@ export class Analytics extends Construct {
             }
         );
 
-        /*
-        const logStreamArn = `arn:aws:logs:${props.region}:${props.account}:log-group:${logGroup.logGroupName}:log-stream:${logStream.logStreamName}`;
-
-        const loggingOption = new CfnApplicationCloudWatchLoggingOption(this, 'LoggingOption', {
-            applicationName: props.flinkAppName,
-            cloudWatchLoggingOption: {
-              logStreamArn
-            },
-          });
-
-        loggingOption.node.addDependency(flinkApplication);
-        */
-
         flinkApplication.node.addDependency(flinkAsset);
         flinkApplication.node.addDependency(flinkRole);
         flinkApplication.node.addDependency(domain); 
