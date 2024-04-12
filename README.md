@@ -49,7 +49,7 @@ The OpenSearch Dashboard can be imported following the steps in the *Getting Sta
 1. Clone the repository to your desired workspace:
 
 ```bash
-git clone ...
+git clone https://github.com/aws-samples/aws-real-time-web-shop-analytics.git
 ```
 
 2. Move to the flink-consumer directory and build the JAR file:
