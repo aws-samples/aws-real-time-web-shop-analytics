@@ -9,7 +9,7 @@ import { join as pathJoin } from "path";
 import { Runtime as LambdaRuntime, Code as LambdaCode, Function } from "aws-cdk-lib/aws-lambda";
 import { LogStream, LogGroup, RetentionDays } from "aws-cdk-lib/aws-logs"; 
 import { Provider } from "aws-cdk-lib/custom-resources";
-import { Peer } from "aws-cdk-lib/aws-ec2";
+import { Peer, EbsDeviceVolumeType } from "aws-cdk-lib/aws-ec2";
 import { CfnApplication, CfnApplicationCloudWatchLoggingOption} from "aws-cdk-lib/aws-kinesisanalyticsv2";
 import { Asset } from "aws-cdk-lib/aws-s3-assets";
 
@@ -216,7 +216,7 @@ export class Analytics extends Construct {
         
         // OpenSearch domain
         const domain = new Domain(this, "Domain", {
-                version: EngineVersion.OPENSEARCH_1_3,
+                version: EngineVersion.OPENSEARCH_2_11,
                 nodeToNodeEncryption: true,
                 enforceHttps: true,
                 domainName: props.openSearchDomainName,
@@ -225,12 +225,16 @@ export class Analytics extends Construct {
             },
             vpc: vpc,
             capacity: {
-                dataNodes: 4,
-                masterNodes: 3, 
-                dataNodeInstanceType: 'm5.xlarge.search'
+                dataNodes: 2,
+                masterNodes: 0, 
+                dataNodeInstanceType: 'r6g.large.search',
+                multiAzWithStandbyEnabled: false
             },
             ebs: {
-                volumeSize: 100,
+                volumeSize: 30,
+                volumeType: EbsDeviceVolumeType.GP3,
+                throughput: 125,
+                iops: 3000
               },
             removalPolicy: RemovalPolicy.DESTROY,
             zoneAwareness: {
