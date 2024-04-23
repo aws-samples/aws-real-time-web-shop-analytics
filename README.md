@@ -123,13 +123,10 @@ bash scripts/create_index.sh
 8. Open the OpenSearch Dashboard: 
 
 - Open your browser and access `https://localhost:8157/_dashboards`.
-- Open the menu and click on *Stack Management*
+- Open the menu and click on *Dashboards Management* under *Management*.
+- Then click on *Saved Objects* and import *export.ndjson* which can be found in the scripts folder
 
-<img src="images/stack_management.png" alt="Stack Management">
-
- - Then click on *Saved Objects* and import *export.ndjson* which can be found in the scripts folder
-
- <img src="images/saved_objects.png" alt="Saved Objects">
+<img src="images/stack_management.png" alt="Dashboards Management">
 
 9. Generate the streaming data:
 
