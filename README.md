@@ -124,7 +124,7 @@ bash scripts/create_index.sh
 
 - Open your browser and access `https://localhost:8157/_dashboards`.
 - Open the menu and click on *Dashboards Management* under *Management*.
-- Then click on *Saved Objects* and import *export.ndjson* which can be found in the scripts folder
+- Then click on *Saved Objects* and import *export.ndjson* which can be found in the scripts folder.
 
 <img src="images/stack_management.png" alt="Dashboards Management">
 
