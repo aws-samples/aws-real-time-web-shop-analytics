@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aws-sdk/client-kinesis": "^3.504.0",
-    "@aws-sdk/credential-providers": "^3.504.1",
+    "@aws-sdk/client-kinesis": "^3.624.0",
+    "@aws-sdk/credential-providers": "^3.624.0",
     "@cloudscape-design/components": "^3.0.473",
     "@cloudscape-design/global-styles": "^1.0.20",
     "@smithy/util-utf8": "^2.1.1",
