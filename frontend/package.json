@@ -16,7 +16,7 @@
     "@smithy/util-utf8": "^2.1.1",
     "amazon-cognito-identity-js": "^6.3.7",
     "aws-sdk": "^2.1545.0",
-    "next": "14.1.1",
+    "next": "14.2.10",
     "next-auth": "^4.24.5",
     "normalize.css": "^8.0.1",
     "react": "^18",
